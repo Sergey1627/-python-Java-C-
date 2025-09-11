@@ -1,16 +1,16 @@
-#include <iostream>  
-#include <vector>  
-using namespace std;  
-  
-int main() {  
-    vector<char> k = {'s', 'g', 'v'};   
-    cout << k[0] << endl;  // Выведет: s   
-    k.push_back('z');  
-    cout << "[";  
-    for(char c : k) {  
-        cout << "'" << c << "'";  
-        if(&c != &k.back()) cout << ", ";  
-    }  
-    cout << "]" << endl;  // Выведет: ['s', 'g', 'v', 'z']  
-    return 0;  
-}  
+#include <iostream>
+#include <vector>
+int main() {
+    std::vector<char> k = {'s', 'g', 'v'}; // Создание вектора символов с начальными значениями
+    std::cout << k[0] << std::endl;  // Выведет: s
+    k.push_back('z'); // Добавление элемента 'z' в конец вектора
+    std::cout << "["; // Вывод всех элементов вектора
+    for (size_t i = 0; i < k.size(); ++i) {
+        std::cout << "'" << k[i] << "'";
+        if (i != k.size() - 1) {
+            std::cout << ", ";
+        }
+    }
+    std::cout << "]" << std::endl;  // Выведет: ['s', 'g', 'v', 'z']
+    return 0;
+}
