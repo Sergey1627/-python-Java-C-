@@ -1,0 +1,16 @@
+#include <iostream>  
+#include <vector>  
+using namespace std;  
+  
+int main() {  
+    vector<char> k = {'s', 'g', 'v'};   
+    cout << k[0] << endl;  // Выведет: s   
+    k.push_back('z');  
+    cout << "[";  
+    for(char c : k) {  
+        cout << "'" << c << "'";  
+        if(&c != &k.back()) cout << ", ";  
+    }  
+    cout << "]" << endl;  // Выведет: ['s', 'g', 'v', 'z']  
+    return 0;  
+}  
