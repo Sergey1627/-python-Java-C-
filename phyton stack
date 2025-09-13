@@ -1,0 +1,5 @@
+k = [] 
+k.append('x')  
+k.append('y')  
+k.append('z')  
+print(k)  
