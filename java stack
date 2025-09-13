@@ -1,0 +1,11 @@
+import java.util.ArrayList;  
+import java.util.List;  
+public class Main {  
+    public static void main(String[] args) {  
+        List<String> k = new ArrayList<>();  
+        k.add("x");  
+        k.add("y");  
+        k.add("z");  
+        System.out.println(k);  
+    }  
+}  
